@@ -23,6 +23,7 @@ section.main {
         margin: 0;
         padding: 0;
         .elements {
+            padding: 20px;
             width: calc(100vw/3);
             height: 100vh;
             display: flex;
@@ -83,6 +84,18 @@ section.main {
             transition: all .5s ease-in-out;
             &:hover {
                 width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    section.main {
+        .container {
+            .elements {
+                .button {
+                    font-size: 35px;
+                }
             }
         }
     }
