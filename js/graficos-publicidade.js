@@ -2,7 +2,7 @@
 const ctx1 = document.getElementById('firstChart');
 
 new Chart(ctx1, {
-  type: 'line',
+  type: 'line', 
   data: {
     labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set','Out','Nov','Dec'],
     datasets: [{
@@ -16,6 +16,7 @@ new Chart(ctx1, {
     }]
   },
   options: {
+    aspectRatio: 2.5,
     scales: {
       y: {
         beginAtZero: true,
@@ -33,4 +34,5 @@ new Chart(ctx1, {
 });
 
 Chart.defaults.color = '#FFF';
+Chart.defaults.font.size = 16;
 //------------------------------------------------

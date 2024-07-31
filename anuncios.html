@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anuncios.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Beergam - Publicidade</title>
+<!-- Aside = 5% | Open aside = 10% -->
+
+</head>
+<body>
+    <!-- <div class="backdrop"></div>backdrop -->
+    <header class="main">
+        <div class="container">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <p>Publicidade</p>
+            </div><!--menu-->
+            <div class="blank"></div>
+            <form class="searchMenu">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input placeholder="Busca..." type="text" name="search" id="search">
+            </form>
+            <div class="profile">
+                <i class="fa-regular fa-bell hasNotification">
+                    <!-- Caso necessário, a classe hasNotification coloca um elemento visual sobre isso -->
+                    <!-- Apenas coloque ou remova a classe para o efeito funcionar -->
+                </i>
+                <img src="images/profile.jpg" alt="">
+                <div class="text">
+                    <h6 id="name">Pegazus</h6>
+                    <p id="plan">Assinatura 1</p>
+                </div><!--text-->
+            </div><!--profile-->
+        </div><!--container-->
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <ul class="topMenu">
+                <li><a href="#">Resumo</a></li>
+                <li><a href="#">Patrocínios</a></li>
+                <li><a href="#">Campanhas</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Ações em massa</a></li>
+            </ul>
+            <div class="flex">
+                <aside>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-earth-americas"></i><span>Publicidades</span></a></li>
+                        <li><a href="#"><i class="fa-regular fa-folder-open"></i><span>Resumos</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-box"></i><span>Estoque</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Anúncios</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-building-columns"></i><span>Financeiro</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Configurações</span></a></li>
+                        <li class="quit"><a href="/gerenciar-contas.html">Sair</a></li>
+                    </ul>
+                </aside>
+                <div class="mainInfo">
+                    <div style="height:30vh; width:80vw" class="chart1">
+                        <canvas id="firstChart"></canvas>
+                    </div><!--chart1-->
+                </div><!--mainInfo-->
+                <div class="tags"></div><!--tags-->
+            </div><!--flex-->
+        </div><!--container-->
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/graficos-publicidade.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="js/publiciade.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                eventClick: function(info) {
+                    alert('Event: ' + info.event.title);
+                    alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                    alert('View: ' + info.view.type);
+
+                    info.el.style.borderColor = 'red';
+                },
+                selectable: true,
+                select: function(info) {
+                    alert(`Seleção do dia ${info.startStr} até ${info.endStr}`)
+                },
+                dateClick: function(info) {
+                    alert(`Dia ${info.dateStr} selecionado`)
+                },
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
