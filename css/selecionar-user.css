@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+    
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, #284277);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.orange {
+    background-color: #FF720C;
+}
+
+.flex {
+    display: flex;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+    animation: fadeOut 2s forwards;
+    animation-delay: .5s;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    .quit {
+        background-color: #284277;
+        height: fit-content;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+section.main {
+    .container {
+        h1 {
+            font-size: 120px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            z-index: 999;
+            animation: top 2s forwards;
+            animation-delay: 1s;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+            }
+        }
+        .mainBall1 {
+            animation: centralize 2s forwards, resize1 2s forwards;
+            animation-delay: .5s;
+        }
+        .mainBall2 {
+            animation: centralize 2s forwards, resize2 2s forwards;
+            animation-delay: .5s;
+        }
+        swiper-container {
+            opacity: 0;
+            width: 80vw;
+            height: 60vh;
+            margin: 0 auto;
+            text-align: center;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: enter 1.5s forwards;
+            animation-delay: 1.5s;
+            swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: fit-content;
+                cursor: pointer;
+                h3 {
+                    font-size: 50px;
+                    margin-top: 10px;
+                }
+                img {
+                    border-radius: 60px;
+                    border: 8px solid transparent;
+                    transition: all .2s ease-in-out;
+                }
+                &:hover img {
+                    border-color: #FF720C;
+                }
+            }  
+        }
+        .config {
+            display: flex;
+            position: absolute;
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            left: 50%;
+            top: 150%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #284277;
+            color: #284277;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 30px;
+            opacity: 0;
+            animation: enter2 1.5s forwards;
+            animation-delay: 1.5s;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            i {
+                margin-left: 10px;
+            }
+            &:hover {
+                border-color: #FF720C;
+                color: #FF720C;
+            }
+        }
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes centralize {
+    100% {
+        background-color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes resize1 {
+    100% {
+        width: 1800px;
+        height: 1800px;
+        opacity: .5;
+    }
+}
+
+@keyframes resize2 {
+    100% {
+        width: 1500px;
+        height: 1500px;
+    }
+}
+
+@keyframes top {
+    100% {
+        top: 15%;
+        font-size: 80px;
+    }
+}
+
+@keyframes enter {
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@keyframes enter2 {
+    100% {
+        opacity: 1;
+        top: 90%;
+    }
+}

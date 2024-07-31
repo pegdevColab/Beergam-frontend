@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(90deg, #FFAC70 0%, #FF6B00 100%);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section.main {
+    .container {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        .elements {
+            width: calc(100vw/3);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 0 50px 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ico {
+                margin: 30px;
+            }
+            h2 {
+                font-size: 50px;
+                margin-bottom: 30px;
+                color: #FF720C;
+            }
+            .button {
+                background-color:rgba(255, 149, 74, 0.5);
+                color: #fff;
+                text-decoration: none;
+                font-size: 50px;
+                padding: 10px;
+                margin: 10px 0;
+                max-width: 500px;
+                width: 100%;
+                text-align: center;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background-color:#FF8A00
+                }
+            }
+        }
+        .chamada {
+            color: #fff;
+            font-size: 200px;
+            margin-left: 80px;
+        }
+
+        .phone, .laptop {
+            position: absolute;
+        }
+        .phone {
+            left: 40%;
+            top: 30%;
+            width: 15%;
+            transition: all .5s ease-in-out;
+            &:hover {
+                width: 18%;
+            }
+        }
+        .laptop {
+            left: 60%;
+            top: 30%;
+            width: 35%;
+            transition: all .5s ease-in-out;
+            &:hover {
+                width: 40%;
+            }
+        }
+    }
+}

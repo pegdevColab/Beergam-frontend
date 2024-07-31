@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #284277, #4A7BDD);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex {
+    display: flex;
+    max-width: 80vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg {
+    position: absolute;
+}
+
+.quit {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    background-color: #fff;
+    height: auto;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+section.main {
+    .container {
+        .flex {
+            .item {
+                width: calc(100%/5);
+                text-align: center;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+                margin: 15px 0;
+                a {
+                    text-decoration: none;
+                }
+                .text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin-top: 10px;
+                    font-size: 50px;
+                    color: #fff;
+                    width: auto;
+                    p {
+                        position: relative;
+                        left: 0px;
+                        transition: all .2s ease-in-out;
+                        text-decoration: none;
+                    }
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        position: relative;
+                        left: 20px;
+                        i {
+                            font-size: 30px;
+                            opacity: 0;
+                            transition: all .2s ease-in-out;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                &:hover {
+                    filter: drop-shadow(0 0 0.75rem #0075FF);
+                    .text {
+                        a {
+                            left: 0px;
+                            i {
+                                opacity: 1;
+                                color: #0075FF;
+                            }
+                        }
+                        p {
+                            left: 0;
+                            color: #0075FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.add:hover {
+    filter: none !important;
+    transform: scale(1.05);
+    a {
+        svg {
+            fill: #FF720C
+        }
+        .text {
+            p {
+                color: #FF720C !important;
+            }
+        }
+    }
+}

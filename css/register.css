@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to top, #FFAC70 0%, #FF6B00 100%);
+}
+
+html, body {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.error {
+    color: rgb(255, 25, 25);
+}
+
+.background {
+    position: absolute;
+    transform: skew(15deg, 15deg);
+    opacity: .7;
+    filter: drop-shadow(-20px 20px 0px rgba(0,0,0,0.3)); 
+}
+
+.hover {
+    transition: all .3s ease-in-out;
+    &:hover {
+        transform: scale(1.05) skew(15deg, 15deg);
+    }
+}
+
+.listBg {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: skew(15deg, 15deg);
+    opacity: .7;
+    .item {
+        position: relative;
+        background: linear-gradient(90deg, #FFE0BB, #FFCCA7);
+        padding: 25px;
+        border-radius: 10px 0 0 10px;
+        margin: 10px 0;
+        box-shadow: -30px 20px 5px 0px rgba(0,0,0,0.3);
+        color: #284277;
+        transition: all .3s ease-in-out;
+        .border {
+            position: absolute;
+            display: inline-block;
+            background-color: #FFA336;
+            height: 100%;
+            width: 20px;
+            left: -7%;
+            top: 1%;
+            border-radius: 10px 0 0 10px;
+            transition: all .3s ease-in-out;
+        }
+        .flex {
+            i {
+                margin-left: 10px;
+                font-size: 20px;
+                transition: all .3s ease-in-out;
+            }
+            p {
+                font-size: 20px;
+                transition: all .3s ease-in-out;
+            }
+        }
+        span {
+            font-size: 40px;
+            transition: all .3s ease-in-out;
+        }
+        &:hover {
+            box-shadow: -50px 20px 5px 0px rgba(0,0,0,0.3);
+            .border {
+                background-color: #FF8A00;
+                width: 30px;
+                left: -13%;
+            }
+            .flex {
+                i {
+                    color: #FF8A00;
+                }
+                p {
+                    color: #FF8A00;
+                }
+            }
+        }
+    }
+}
+
+section.main {
+    .container {
+        .logo {
+            margin: 50px;
+            position: relative;
+            z-index: 999;
+        }
+        form {
+            max-width: 600px;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border-radius: 50px;
+            color: #284277;
+            padding: 50px;
+            .flex {
+                align-items: center;
+                margin-bottom: 30px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                h2 {
+                    font-size: 55px;
+                }
+                p {
+                    color: #8D8D8D;
+                }
+                a {
+                    text-decoration: none;
+                    color: #284277;
+                }
+            }
+            .col {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0;
+                span {
+                    margin-bottom: 15px;
+                }
+                input {
+                    padding: 20px;
+                    border: 1px solid #ADADAD;
+                    border-radius: 10px;
+                }
+            }
+            input[type="submit"] {
+                padding: 15px;
+                width: 100%;
+                background-color: #E48700;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                margin-top: 25px;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/selecionar-user.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Beergam - Login</title>
+</head>
+<body>
+    <header>
+        <div class="quit">
+            <a href="/login.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div><!--quit-->
+        <div class="logo">
+            <img src="images/logoColorida.png" alt="">
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div style="width: 280px; height: 280px; left: 55%; bottom: 10%; opacity: .5; border-radius: 50%; position: absolute;" class="mainBall2 orange"></div>
+            <div style="width: 350px; height: 350px; left: 35%; top: -15%; border-radius: 50%; position: absolute;" class="mainBall1 white"></div>
+            <div style="width: 300px; height: 300px; left: -5%; bottom: -8%;" class="ball white"></div>
+            <div style="width: 150px; height: 150px; right: -4%; bottom: 20%;" class="ball white"></div>
+            <div style="width: 150px; height: 150px; left: 20%; bottom: 60%; opacity: .75;" class="ball orange"></div>
+            <div style="width: 200px; height: 200px; left: 70%; bottom: 70%; opacity: .25;" class="ball orange"></div>
+            <h1>Bem vindo <span>Grupo Pegazus!</span></h1>
+
+            <!-- Slider main container -->
+            <swiper-container class="swiper" loop="true" mousewheel="true" navigation="true" pagination-clickable="true" space-between="100"
+            slides-per-view="3">
+                <swiper-slide>
+                    <img src="images/brand1.png" alt="">
+                    <h3>Dluke</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand2.png" alt="">
+                    <h3>Pandora</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand7.png" alt="">
+                    <h3>Morfeu</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand6.png" alt="">
+                    <h3>Luvita</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand5.png" alt="">
+                    <h3>MZZ</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand4.png" alt="">
+                    <h3>Osiris</h3>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/brand3.png" alt="">
+                    <h3>Pegazus</h3>
+                </swiper-slide>
+            </swiper-container><!--swiper-->
+            <a href="/gerenciar-contas.html">
+                <div class="config">
+                    <p>Gerenciar contas</p>
+                    <i class="fa-solid fa-gear"></i>
+                </div><!--config-->
+            </a>
+
+        </div><!--container-->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/selecionar-user.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+</html>
