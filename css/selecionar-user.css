@@ -113,6 +113,9 @@ section.main {
                     margin-top: 10px;
                 }
                 img {
+                    width: 240px;
+                    height: 240px;
+                    object-fit: cover;
                     border-radius: 60px;
                     border: 8px solid transparent;
                     transition: all .2s ease-in-out;
