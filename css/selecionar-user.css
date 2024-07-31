@@ -17,6 +17,7 @@ html, body {
 .container {
     margin: 0 auto;
     padding: 0 2%;
+    max-width: 1920px;
 }
 
 .white {
