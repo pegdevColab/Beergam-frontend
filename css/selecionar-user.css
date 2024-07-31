@@ -45,6 +45,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+    position: relative;
+    z-index: 999;
     .quit {
         background-color: #284277;
         height: fit-content;
