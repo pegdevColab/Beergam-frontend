@@ -10,11 +10,12 @@
 
 html, body {
     height: 100%;
-    background: linear-gradient(to top, #FFAC70 0%, #FF6B00 100%);
 }
 
-html, body {
-    height: 100%;
+body {
+    background: linear-gradient(to top, #FFAC70 0%, #FF6B00 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 .flex {
@@ -33,12 +34,37 @@ html, body {
     color: rgb(255, 25, 25);
 }
 
+.container {
+    max-width: 1920px;
+}
+
 .background {
     position: absolute;
     transform: skew(15deg, 15deg);
     opacity: .7;
-    filter: drop-shadow(-20px 20px 0px rgba(0,0,0,0.3)); 
+    filter: drop-shadow(-20px 20px 0px rgba(0,0,0,0.3));
 }
+
+.background:nth-child(1) {
+    top: 10vh;
+    left: -5vw;
+}
+
+.background:nth-child(2) {
+    top: -18vh;
+    left: -10vw;
+}
+
+.background:nth-child(3) {
+    top: 20vh;
+    left: 20vw;
+}
+
+.background:nth-child(4) {
+    top: 67vh;
+    left: 18vw;
+}
+
 
 .hover {
     transition: all .3s ease-in-out;
@@ -109,24 +135,37 @@ html, body {
     }
 }
 
+header {
+    margin-bottom: 50px;
+    position: relative;
+    .logo {
+        margin: 0 50px 50px 50px;
+        position: absolute;
+        z-index: 999;
+    }
+}
+
 section.main {
     .container {
-        .logo {
-            margin: 50px;
-            position: relative;
-            z-index: 999;
-        }
+        position: relative;
         form {
+            scrollbar-color: #FF8A00 transparent;
             max-width: 600px;
             width: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            margin: 0 auto;
             background-color: #fff;
             border-radius: 50px;
             color: #284277;
             padding: 50px;
+            &::-webkit-scrollbar {
+                width: 3px;
+                height: 3px;
+            }
+            
+            &::-webkit-scrollbar-track {
+            background: transparent;
+            padding: 2px;
+            }
             .flex {
                 align-items: center;
                 margin-bottom: 30px;
@@ -169,6 +208,53 @@ section.main {
                 &:hover {
                     transform: scale(1.05);
                 }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    body {
+        overflow: hidden;
+    }
+
+    .listBg {
+        top: 72%;
+    }
+    .background:nth-child(1) {
+        top: 20vh;
+        left: -2vw;
+    }
+    
+    .background:nth-child(2) {
+        top: -10vh;
+        left: -5vw;
+    }
+
+    .background:nth-child(3) {
+        top: 30vh;
+        left: 25vw;
+    }
+
+    .background:nth-child(4) {
+        top: 80vh;
+        left: 20vw;
+    }
+    section.main {
+        .container {
+            form {
+            max-height: 600px;
+            height: 100%;
+            overflow: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #FF8A00 transparent;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 50px;
+            color: #284277;
+            padding: 50px;
             }
         }
     }
