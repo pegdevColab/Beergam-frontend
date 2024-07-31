@@ -49,6 +49,14 @@ html, body {
     }
 }
 
+.main1 {
+    left: 74%;
+}
+
+.main2 {
+    left: 30%;
+}
+
 .item {
     position: relative;
     right: 0;
@@ -294,6 +302,23 @@ section.main {
             }
             .miniGraphs {
                 display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .card {
+        padding: 50px 40px;
+    }
+    .main2 {
+        left: 38%;
+    }
+
+    section.main {
+        .container {
+            .topMenu {
+                left: 15%;
             }
         }
     }

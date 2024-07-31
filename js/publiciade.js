@@ -18,57 +18,119 @@ $(function() {
     //Menus com animação
 
     $('.menu').click(function() {
-        if(!$(this).hasClass('expand')) {
-            $(this).css({
-                'width': '300px'
-            })
-            $('.item').css({
-                'width': 'auto',
-                'right': '0',
-
-            }) 
-            $('.item .flex').css({
-                'display': 'flex'
-            })
-            $('.item span').css({
-                'display': 'block'
-            })
-            $('aside').css({
-                'width': 'auto'
-            })
-            $('aside ul').css({
-                'display': 'block'
-            })
-            $('.card').css({
-                'padding': '80px 100px'
-            })
-            $(this).addClass('expand')
+        let width = $(window).width()
+        if(width < 1550) {
+            if(!$(this).hasClass('expand')) {
+                $(this).css({
+                    'width': '300px'
+                })
+                $('.item').css({
+                    'width': 'auto',
+                    'right': '0',
+    
+                }) 
+                $('.item .flex').css({
+                    'display': 'flex'
+                })
+                $('.item span').css({
+                    'display': 'block'
+                })
+                $('aside').css({
+                    'width': 'auto'
+                })
+                $('aside ul').css({
+                    'display': 'block'
+                })
+                $('.card').css({
+                    'padding': '50px 40px'
+                })
+                $('.main2').css({
+                    'left': '38%'
+                })
+                $(this).addClass('expand')
+            } else {
+                $(this).css({
+                    'width': '62px'
+                })
+                $('.item').css({
+                    'width': '50px',
+                    'right': '0',
+    
+                }) 
+                $('.item .flex').css({
+                    'display': 'none'
+                })
+                $('.item span').css({
+                    'display': 'none'
+                })
+                $('aside').css({
+                    'width': '30px'
+                })
+                $('aside ul').css({
+                    'display': 'none'
+                })
+    
+                $('.card').css({
+                    'padding': '50px 80px'
+                })
+                $('.main2').css({
+                    'left': '32%'
+                })
+                $(this).removeClass('expand')
+            }
         } else {
-            $(this).css({
-                'width': '62px'
-            })
-            $('.item').css({
-                'width': '50px',
-                'right': '0',
-
-            }) 
-            $('.item .flex').css({
-                'display': 'none'
-            })
-            $('.item span').css({
-                'display': 'none'
-            })
-            $('aside').css({
-                'width': '30px'
-            })
-            $('aside ul').css({
-                'display': 'none'
-            })
-
-            $('.card').css({
-                'padding': '80px 130px'
-            })
-            $(this).removeClass('expand')
+            if(!$(this).hasClass('expand')) {
+                $(this).css({
+                    'width': '300px'
+                })
+                $('.item').css({
+                    'width': 'auto',
+                    'right': '0',
+    
+                }) 
+                $('.item .flex').css({
+                    'display': 'flex'
+                })
+                $('.item span').css({
+                    'display': 'block'
+                })
+                $('aside').css({
+                    'width': 'auto'
+                })
+                $('aside ul').css({
+                    'display': 'block'
+                })
+                $('.card').css({
+                    'padding': '80px 100px'
+                })
+                $(this).addClass('expand')
+            } else {
+                $(this).css({
+                    'width': '62px'
+                })
+                $('.item').css({
+                    'width': '50px',
+                    'right': '0',
+    
+                }) 
+                $('.item .flex').css({
+                    'display': 'none'
+                })
+                $('.item span').css({
+                    'display': 'none'
+                })
+                $('aside').css({
+                    'width': '30px'
+                })
+                $('aside ul').css({
+                    'display': 'none'
+                })
+    
+                $('.card').css({
+                    'padding': '80px 130px'
+                })
+                $(this).removeClass('expand')
+            }
         }
     })
 
