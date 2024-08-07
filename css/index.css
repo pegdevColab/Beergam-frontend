@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    background: linear-gradient(90deg, #FFAC70 0%, #FF6B00 100%);
+    background: linear-gradient(180deg, #284277 0%, #00246C 100%);
 }
 
 .container {
@@ -44,7 +44,7 @@ section.main {
                 color: #FF720C;
             }
             .button {
-                background-color:rgba(255, 149, 74, 0.5);
+                background-color: rgb(40, 66, 119, .5);
                 color: #fff;
                 text-decoration: none;
                 font-size: 50px;

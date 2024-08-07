@@ -180,6 +180,7 @@ section.main {
             aside {
                 background-color: #284277;
                 width: 5%;
+                height: fit-content;
                 border-radius: 0 10px 50px 0;
                 padding: 20px;
                 display: inline-block;
@@ -244,6 +245,8 @@ section.main {
                 }
             }
             .mainInfo {
+                max-width: 520px;
+                height: fit-content;
                 #firstChart {
                     background-color: #284277;
                     color: #fff;
@@ -251,6 +254,80 @@ section.main {
                     padding: 15px;
                     font-size: 18px;
                     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+            .tag {
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+                height: 30vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 50px;
+                h1 {
+                    color: #FF710A;
+                    font-size: 24px;
+                }
+                span {
+                    color: #284277;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+            .infos {
+                width: calc(fit-content + 20px);
+                .item {
+                    position: relative;
+                    background: linear-gradient(90deg, #FFE0BB, #FFCCA7);
+                    padding: 25px;
+                    border-radius: 10px 0 0 10px;
+                    margin: 10px 0;
+                    color: #284277;
+                    transition: all .3s ease-in-out;
+                    .border {
+                        position: absolute;
+                        display: inline-block;
+                        background-color: #FFA336;
+                        height: 100%;
+                        width: 20px;
+                        left: -7%;
+                        top: 1%;
+                        border-radius: 10px 0 0 10px;
+                        transition: all .3s ease-in-out;
+                    }
+                    .flex {
+                        transition: all .2s ease-in-out;
+                        i {
+                            margin-left: 10px;
+                            font-size: 20px;
+                            transition: all .3s ease-in-out;
+                        }
+                        p {
+                            font-size: 20px;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    span {
+                        font-size: 40px;
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover {
+                        .border {
+                            background-color: #FF8A00;
+                            width: 30px;
+                            left: -13%;
+                        }
+                        .flex {
+                            i {
+                                color: #FF8A00;
+                            }
+                            p {
+                                color: #FF8A00;
+                            }
+                        }
+                    }
                 }
             }
         }

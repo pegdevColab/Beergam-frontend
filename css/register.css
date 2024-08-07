@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to top, #FFAC70 0%, #FF6B00 100%);
+    background: linear-gradient(180deg, #284277 0%, #00246C 100%);
     position: relative;
     overflow: hidden;
 }
