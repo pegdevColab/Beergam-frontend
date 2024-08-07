@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+    
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, #284277);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1920px;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.orange {
+    background-color: #FF720C;
+}
+
+.flex {
+    display: flex;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+    animation: fadeOut 2s forwards;
+    animation-delay: .5s;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    z-index: 999;
+    .quit {
+        background-color: #284277;
+        height: fit-content;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 10px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+section.main {
+    .container {
+        h1 {
+            font-size: 120px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            z-index: 999;
+            animation: top 2s forwards;
+            animation-delay: 1s;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+            }
+        }
+        .mainBall1 {
+            animation: centralize 2s forwards, resize1 2s forwards;
+            animation-delay: .5s;
+        }
+        .mainBall2 {
+            animation: centralize 2s forwards, resize2 2s forwards;
+            animation-delay: .5s;
+        }
+        .info {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            text-align: center;
+            margin-top: 50px;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 2.5s;
+            h3 {
+                color: #FF8A00;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 50px;
+                margin-bottom: 80px;
+            }
+            a {
+                text-decoration: none;
+                color: #284277;
+                svg {
+                    max-width: 100px;
+                    width: 100%;
+                    fill: #284277 !important;
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes centralize {
+    100% {
+        background-color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes resize1 {
+    100% {
+        width: 1800px;
+        height: 1800px;
+        opacity: .5;
+    }
+}
+
+@keyframes resize2 {
+    100% {
+        width: 1500px;
+        height: 1500px;
+    }
+}
+
+@keyframes top {
+    100% {
+        top: 15%;
+        font-size: 80px;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .info {
+        margin-top: 100px !important;
+    }
+}
