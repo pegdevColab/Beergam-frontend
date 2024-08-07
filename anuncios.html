@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/anuncios.css">
     <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Beergam - Publicidade</title>
 <!-- Aside = 5% | Open aside = 10% -->
@@ -61,42 +62,172 @@
                     </ul>
                 </aside>
                 <div class="mainInfo">
-                    <div style="height:30vh; width:80vw" class="chart1">
+                    <div class="chart1">
                         <canvas id="firstChart"></canvas>
                     </div><!--chart1-->
                 </div><!--mainInfo-->
-                <div class="tags"></div><!--tags-->
+                <div class="tag">
+                    <h1>Investimentos</h1>
+                    <span>R$480,00</span>
+                </div><!--tag-->
+                <div class="tag">
+                    <h1>Investimentos</h1>
+                    <span>R$480,00</span>
+                </div><!--tag-->
+                <div class="infos">
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+                </div><!--infos-->
+            </div><!--flex-->
+            <div class="flex line2">
+                <aside style="opacity: 0; pointer-events: none;">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-earth-americas"></i><span>Publicidades</span></a></li>
+                        <li><a href="#"><i class="fa-regular fa-folder-open"></i><span>Resumos</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-box"></i><span>Estoque</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Anúncios</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-building-columns"></i><span>Financeiro</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Configurações</span></a></li>
+                        <li class="quit"><a href="/gerenciar-contas.html">Sair</a></li>
+                    </ul>
+                </aside>
+                <div class="group1">
+                    <div class="flex">
+                        <div class="desempenho">
+                            <span>80%</span>
+                            <p>Você está tendo um bom desempenho</p>
+                            <img src="images/graph.png" alt="">
+                        </div><!--desempenho-->
+                        <div id="calendar"></div>
+                    </div><!--flex-->
+                    <div class="flex">
+
+                        <!-- Basta alterar o valor do span que o gráfico muda cor e preenchimento sozinho -->
+                        <div class="circle" id="circle1">
+                            <span>50%</span>
+                        </div><!--circle-->
+                        <div class="circle" id="circle1">
+                            <span>10%</span>
+                        </div><!--circle-->
+                        <div class="circle" id="circle1">
+                            <span>90%</span>
+                        </div><!--circle-->
+
+                    </div><!--flex-->
+                </div><!--group1-->
+                <div class="group2">
+                    <div class="chart2">
+                        <canvas id="secondChart"></canvas>
+                    </div><!--chart1-->
+                </div><!--group2-->
+
+                <div style="opacity: 0; pointer-events: none;" class="infos">
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+
+                    <div class="item">
+                        <div class="border"></div>
+                        <div class="flex">
+                            <p>Impressões</p>
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div><!--flex-->
+                        <span>126.1k</span>
+                    </div><!--item-->
+                </div><!--infos-->
             </div><!--flex-->
         </div><!--container-->
+    </section>
+
+    <section class="list">
+        <div class="container">
+            <h2>Lista de Todos os Anúncios</h2>
+            <div id="myGrid" style=" margin: 0 auto; height: 100vh" class="ag-theme-quartz"></div>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/graficos-publicidade.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="js/jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
     <script src="js/publiciade.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                eventClick: function(info) {
-                    alert('Event: ' + info.event.title);
-                    alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-                    alert('View: ' + info.view.type);
-
-                    info.el.style.borderColor = 'red';
-                },
-                selectable: true,
-                select: function(info) {
-                    alert(`Seleção do dia ${info.startStr} até ${info.endStr}`)
-                },
-                dateClick: function(info) {
-                    alert(`Dia ${info.dateStr} selecionado`)
-                },
-            });
-            calendar.render();
-        });
-    </script>
+    <script src="js/grid.js"></script>
+    <script src="js/calendario-publicidade.js"></script>
+    <script src="js/progressao-circular.js"></script>
 </body>
 </html>

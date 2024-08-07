@@ -15,21 +15,24 @@ $(function() {
     //verificar se tem notificação a cada 5s
 
     //-------------------------------------------
+
     //Ações menu
 
     $('.menu').click(function() {
          {
             if(!$(this).hasClass('expand')) {
                 // $('.backdrop').css('display', 'inline-block')
-                $('aside').css('width', '15%')
+                $('aside').css('width', '13%')
                 $('aside ul').css('align-items', 'start')
                 $('aside ul li a span').css('display', 'block')
+                $('.infos .item').css('padding', '25px 10px')
                 $(this).addClass('expand')
             } else {
                 // $('.backdrop').css('display', 'none')
                 $('aside').css('width', '5%')
                 $('aside ul').css('align-items', 'center')
                 $('aside ul li a span').css('display', 'none')
+                $('.infos .item').css('padding', '25px')
                 $('.menu').removeClass('expand')
             }
         }
@@ -105,16 +108,4 @@ $(function() {
     });
  
 //-----------------------------------------------
-    
-//Prograssão em círculo
-    
-    function updateProgressBar() {
-        var progress = parseInt($('.inside-circle span').text());
-        var degree = progress * 3.6;
-
-        // Atualiza a rotação da barra
-        $('.bar::before').css('transform', 'rotate(' + degree + 'deg)');
-    }
-
-    updateProgressBar();
 })
