@@ -63,6 +63,7 @@ html {
 .up {
     transform: scale(1.2) !important;
     opacity: 1 !important;
+    margin: 0 5px
 }
 
 .show {
