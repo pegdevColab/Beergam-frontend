@@ -133,7 +133,7 @@ header.main {
 
 section.main {
     .container {
-        margin-bottom: -500px;
+        margin-bottom: -300px;
         padding: 0;
         ul.topMenu {
             display: flex;
@@ -436,17 +436,10 @@ section.main {
     }
 }
 
-.ag-cell {
-    max-width: 100;
-    img {
-    object-fit: cover;
-    }
-} 
-
 @media screen and (max-width: 1550px) {
     section.main {
         .container {
-            margin-bottom: -600px;
+            margin-bottom: -400px;
             .flex {
                 .mainInfo {
                     max-width: 520px !important;
