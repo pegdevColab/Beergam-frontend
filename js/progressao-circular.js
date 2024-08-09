@@ -17,7 +17,7 @@ $('.circle').each(function() {
 
     $this.circleProgress({
         value: value,
-        size: 80,
+        size: 80, 
         fill: {
             gradient: fillColor
         }
