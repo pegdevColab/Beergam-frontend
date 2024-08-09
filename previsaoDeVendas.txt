@@ -1,5 +1,6 @@
 Na tela do item individual, no gráfico de previsão de vendas, tem como fazer uma linha de previsão pelo ChartJS, uma linha pontilhada... 
 As linhas de margem de erro precisam ser colocadas a parte. Caso dê (creio que dê sim), ela baseia seu valor na linha de previsão 
-Pesquisa: ChartJS future prediction how-i-can-add-the-predict-data-and-the-actual-data-in-the-same-graph-with-chartj
+Pesquisa: ChartJS future prediction 
 https://www.geeksforgeeks.org/how-to-implement-line-chart-using-chartjs/
 https://codepen.io/stockinail/pen/zYbMYeW
+https://github.com/chartjs/Chart.js/discussions/11683
