@@ -132,7 +132,7 @@ header.main {
             }
         }
         .searchMenu {
-            background-color:#F7F9FB;
+            background-color:#fff;
             padding: 10px;
             border-radius: 8px;
             width: 30vw;
@@ -352,12 +352,16 @@ section.main {
                     font-size: 26px;
                     cursor: pointer;
                     margin-right: 50px;
+                    transition: all .2s ease-in-out;
                     i {
                         color: rgba(72, 122, 249, 0.75);
                         background-color: #fff;
                         padding: 8px;
                         margin-left: 20px;
                         border-radius: 50%;
+                    }
+                    &:hover {
+                        background-color: rgba(72, 122, 249, 1);
                     }
                 }
                 form {
@@ -395,6 +399,83 @@ section.main {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+section.anuncios {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 100%;
+    position: relative;
+    .container {
+        .flex {
+            justify-content: start;
+            position: relative;
+            .abas {
+                position: absolute;
+                z-index: -1;
+                top: -50px;
+                button {
+                    position: relative;
+                    border: 0;
+                    bottom: 0;
+                    padding: 10px 10px 20px 10px;
+                    font-size: 22px;
+                    color: #6B7280;
+                    background-color: #DFDFDF;
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                    margin: 0 5px;
+                    cursor: pointer;
+                    border-radius: 10px 10px 0 0;
+                    transition: all .2s ease-in-out;
+                    span {
+                        background-color: #9D9D9D;
+                        font-size: 16px;
+                        color: #fff;
+                        padding: 5px;
+                        border-radius: 20px;
+                    }
+                    &:hover {
+                        bottom: 10px;
+                    }
+                }
+                button.ativo {
+                    bottom: 10px;
+                    color: #284277;
+                    background-color: #fff;
+                    span {
+                        background-color: #0075FF;
+                    }
+                }
+            }
+            .marcadorPagina {
+                display: flex;
+                margin: 50px 0;
+                align-items: center;
+                p {
+                    font-size: 16px;
+                    color: #585757;
+                    margin-right: 10px;
+                }
+                button {
+                    margin: 0 5px;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    color: #FF8A00;
+                    background: transparent;
+                    border: 3px solid #E8E8E8;
+                    transition: all .2s ease-in-out;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #FF8A00;
+                        color: #fff;
+                        border-color: #FF8A00;
+                    }
+                }
+
             }
         }
     }
