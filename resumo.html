@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resumo.css ">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Beergam - Resumo</title>
+<!-- Aside = 5% | Open aside = 10% -->
+
+</head>
+<body>
+    <!-- <div class="backdrop"></div>backdrop -->
+    <header class="main">
+        <div class="container">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div><!--menu-->
+            <div class="blank"></div>
+            <div class="informatios">
+                <div class="memory">
+                    <h2>Uso do seu espaço está no <span>Full</span></h2>
+                    <div all="5000" class="memoryLeft">
+                        <p class="blue">Espaço utilizado - <span id="using">2573</span> un.</p>
+                        <p class="gray"><span id="left">2427</span> un. livres</p>
+                    </div><!--memoryLeft-->
+                    <div id="progressBar"></div>
+                </div><!--memory-->
+                 <div class="listItens">
+                    <div class="item">
+
+                    </div><!--item -->
+                 </div><!--listItens-->
+            </div><!--informations-->
+            <div class="profile">
+                <i class="fa-regular fa-bell hasNotification">
+                    <!-- Caso necessário, a classe hasNotification coloca um elemento visual sobre isso -->
+                    <!-- Apenas coloque ou remova a classe para o efeito funcionar -->
+                </i>
+                <img src="images/profile.jpg" alt="">
+                <div class="text">
+                    <h6 id="name">Pegazus</h6>
+                    <p id="plan">Assinatura 1</p>
+                </div><!--text-->
+            </div><!--profile-->
+        </div><!--container--> 
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="flex">
+                <aside>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-earth-americas"></i><span>Publicidades</span></a></li>
+                        <li><a href="#"><i class="fa-regular fa-folder-open"></i><span>Resumos</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-box"></i><span>Estoque</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Anúncios</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-building-columns"></i><span>Financeiro</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Configurações</span></a></li>
+                        <li class="quit"><a href="/gerenciar-contas.html">Sair</a></li>
+                    </ul>
+                </aside>
+            </div><!--flex-->
+        </div><!--container-->
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/animacao-aside.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/publiciade.js"></script>
+    <script src="js/resumo.js"></script>
+</body>
+</html>
