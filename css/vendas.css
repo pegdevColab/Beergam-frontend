@@ -270,30 +270,10 @@ header.main {
     }
 }
 
-@media screen and (max-width: 1550px) {
-    section.main {
-        .container {
-            .flex {
-                gap: 50px;
-                .flex {
-                    margin-top: 80px;
-                    .char {
-                        margin-top: 0;
-                    }
-                    .top4 {
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 section.main {
     .container {
         padding: 0;
         .flex {
-            gap: 100px;
             aside {
                 align-content: flex-start;
                 background-color: #284277;
@@ -362,183 +342,86 @@ section.main {
                     }
                 }
             }
-            .flex {
-                justify-content: space-around;
-                padding-right: 50px;
-                flex-direction: column;
-                margin-top: 50px;
-                .flex {
-                    flex-direction: row;
-                    .item {
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-                        padding: 30px 50px;
-                        height: fit-content;
-                        position: relative;
-                        border-radius: 20px;
-                        transition: all .3s ease-in-out;
-                        background-color: #fff;
-                        h2 {
-                            font-size: 36px;
-                            color: #272525;
-                            margin-bottom: 10px;
-                        }
-                        h4 {
-                            font-size: 18px;
-                            color: #272525;
-                            font-weight: normal;
-                            margin-bottom: 15px;
-                        }
-                        span {
-                            color: #272525;
-                            font-size: 14px;
-                            display: inline-block;
-                            width: max-content;
-                            font-weight: 250;
-                        }
-                        .list {
-                            position: absolute;
-                            font-size: 26px;
-                            top: 30px;
-                            right: 30px;
-                            padding: 15px;
-                            border-radius: 50%;
-                        }
-                    }
+            .chart1 {
+                margin-top: 70px;
+                width: 90%;
+                margin: 70px auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                canvas {
+                    width: 100% !important;
+                    height: 500px !important; /* Aumenta a altura do canvas */
                 }
-                .flex {
-                    margin-top: -50px;
-                    .chart {
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-                        padding: 10px;
-                        border-radius: 20px;
-                        width: calc(100%/2.15) !important;
-                        background-color: #fff;
-                    }
-                }
-            }
-        }
-        .top4 {
-            background-image: linear-gradient(to right, #284277, #487AF9);
-            width: 95%;
-            gap: 0 !important;
-            padding: 15px;
-            border-radius: 20px;
-            margin: 50px auto 0 auto;
-            .product {
-                display: flex;
-                align-items: center;
-                margin: 0 10px;
-                img {
-                    max-width: 100px;
-                    max-height: 100px;
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    border-radius: 20px;
-                }
-                .info {
-                    display: flex;
-                    flex-direction: column;
-                    margin-left: 10px;
-                    h3 {
-                        color: #fff;
-                        font-size: 14px;
-                        margin-bottom: 10px;
-                    }
-                    .visitas {
-                        background-color: #D9D9D9;
-                        padding: 5px;
-                        border-radius: 10px 10px 10px 0;
-                        font-size: 12px;
-                        font-weight: 400;
-                    }
-                    .classificacao {
-                        background-color:#87DE72;
-                        width: fit-content;
-                        padding: 5px;
-                        border-radius: 0 0 10px 10px;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        .createAd {
-            margin-top: 50px;
-            width: 80%;
-            margin: 100px auto;
-            background-color: #fff;
-            position: relative;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-            .all {
-                margin: 0 auto;
-                text-align: center;
-                position: relative;
-                bottom: 35px;
-                display: flex;
-                justify-content: space-between;
-                width: fit-content;
-                .create {
+                #curDate {
+                    appearance: none;
+                    border: 1px solid #ECE9F1;
+                    border-radius: 8px;
+                    padding: 10px;
+                    width: 250px;
+                    font-size: 16px;
+                    outline: none;
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                  }
+                  #curDate:focus {
+                    border-color: #000;
+                    box-shadow: 0 0 5px rgba(0, 150, 0, 0.1);
+                  }
+                  #curDate::-webkit-calendar-picker-indicator {
+                    background: url('/images/calendar-days-solid.svg') no-repeat center center;
+                    background-size: 16px;
                     border: none;
-                    background-color: rgba(72, 122, 249, 0.75);
-                    color: #fff;
-                    padding: 10px 20px;
-                    border-radius: 50px;
-                    font-size: 26px;
                     cursor: pointer;
-                    margin-right: 50px;
-                    i {
-                        color: rgba(72, 122, 249, 0.75);
-                        background-color: #fff;
-                        padding: 8px;
-                        margin-left: 20px;
-                        border-radius: 50%;
-                    }
+                  }
+            }
+        }
+        .flex {
+            .item {
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+                padding: 30px 50px;
+                height: fit-content;
+                position: relative;
+                border-radius: 20px;
+                transition: all .3s ease-in-out;
+                background-color: #fff;
+                h2 {
+                    font-size: 36px;
+                    color: #272525;
+                    margin-bottom: 10px;
                 }
-                form {
-                    display: flex;
-                    input#list {
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-                        padding: 20px 20px 20px 30px;
-                        border-radius: 25px;
-                        border: none;
-                        margin-right: 20px;
-                        &:focus {
-                            outline: none;
-                        }
-                    }
-                    .searchBox {
-                        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-                        border-radius: 25px;
-                        background-color: #fff;
-                        padding: 0 20px 0 0;
-                        input#ad {
-                            padding: 20px 20px 20px 30px;
-                            border-radius: 25px;
-                            border: none;
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-                        button {
-                            padding: 10px;
-                            background-color: #FF8A00;
-                            color: #fff;
-                            border-radius: 10px;
-                            border: none;
-                            cursor: pointer;
-                        }
-                    }
+                h4 {
+                    font-size: 18px;
+                    color: #272525;
+                    font-weight: normal;
+                    margin-bottom: 15px;
+                }
+                span {
+                    color: #272525;
+                    font-size: 14px;
+                    display: inline-block;
+                    width: max-content;
+                    font-weight: 250;
+                }
+                .list {
+                    position: absolute;
+                    font-size: 26px;
+                    top: 30px;
+                    right: 30px;
+                    padding: 15px;
+                    border-radius: 50%;
                 }
             }
         }
     }
 }
 
+
 @media screen and (max-width: 1550px) {
     section.main {
         .container {
             .flex {
-                gap: 50px;
+                gap: 0px;
                 .flex {
                     margin-top: 80px;
                     .char {

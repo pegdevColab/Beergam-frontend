@@ -46,7 +46,7 @@
                         </div><!--card-->
                         <div class="card yellow">
                             <h2 id="data2">71</h2>
-                            <p>Prontos para enviar</p>
+                            <p>Prontos para enviar</p>    
                         </div><!--card-->
                         <div class="card green">
                             <h2 id="data3">101</h2>
@@ -88,6 +88,39 @@
                         <li class="quit"><a href="/gerenciar-contas.html">Sair</a></li>
                     </ul>
                 </aside>
+                <div class="chart1">
+                    <input type="date" id="curDate" onchange="updateChart()">
+                    <canvas id="firstChart"></canvas>
+                </div><!--chart2-->
+            </div><!--flex-->
+            <div class="flex">
+                <div class="item">
+                    <h2>10</h2>
+                    <h4>Categorias</h4>
+                    <!-- Para mudar a direção da seta, basta mudar a classe fa-arrow-(direção da seta) -->
+                    <!-- A cor também é pela classe "green" ou "red"-->
+                    <!-- A visibilidade segue o mesmo padrão de classes, para mostrar, classe "show". O contrário, "hide" -->
+                    <span class="show"><i class="green fa-solid fa-arrow-up"></i> 2 mais que no último semestre</span>
+                    <i style="background-color: #E8F5FF; color: #487AF9;" class="list fa-solid fa-list"></i>
+                </div><!--item-->
+                <div class="item">
+                    <h2>10</h2>
+                    <h4>Categorias</h4>
+                    <span class="show"><i class="green fa-solid fa-arrow-up"></i> 2 mais que no último semestre</span>
+                    <i style="background-color: #E8F5FF; color: #487AF9;" class="list fa-solid fa-list"></i>
+                </div><!--item-->
+                <div class="item">
+                    <h2>10</h2>
+                    <h4>Categorias</h4>
+                    <span class="show"><i class="green fa-solid fa-arrow-up"></i> 2 mais que no último semestre</span>
+                    <i style="background-color: #E8F5FF; color: #487AF9;" class="list fa-solid fa-list"></i>
+                </div><!--item-->
+                <div class="item">
+                    <h2>10</h2>
+                    <h4>Categorias</h4>
+                    <span class="show"><i class="green fa-solid fa-arrow-up"></i> 2 mais que no último semestre</span>
+                    <i style="background-color: #E8F5FF; color: #487AF9;" class="list fa-solid fa-list"></i>
+                </div><!--item-->
             </div><!--flex-->
         </div><!--container-->
     </section>
@@ -97,6 +130,7 @@
     <script src="js/graficos-anuncios.js"></script>
     <script src="js/animacao-aside.js"></script>
     <script src="js/notification.js"></script>
+    <script src="js/grafico-vendas.js"></script>
     <script src="js/publiciade.js"></script>
 </body>
 </html>
